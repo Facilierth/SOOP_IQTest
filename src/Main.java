@@ -25,6 +25,7 @@ public class Main extends JPanel {
 
         JFrame titleFrame = new JFrame("Raven's matrices");
         titleFrame.setResizable(false);
+        titleFrame.getContentPane().setBackground(new Color(162, 225, 165));
         titleFrame.setSize(PositionsOfShapes.frameSizeX, PositionsOfShapes.frameSizeY);
         titleFrame.setVisible(true);
         titleFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -70,7 +71,6 @@ public class Main extends JPanel {
         textArea = new JTextArea();
         textArea.setBounds((int) (0.33 * PositionsOfShapes.frameSizeX), (int) (0.9 * PositionsOfShapes.frameSizeY), (int) (0.33 * PositionsOfShapes.frameSizeX), 34);
 
-        Color backgroundColor = new Color(0,0,0);
         Color color =  (new Color(162, 225, 165));
 
         textArea.setBackground(new Color(162, 225, 165));
