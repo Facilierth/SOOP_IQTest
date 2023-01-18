@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18af90a4-e6fe-412d-b2b2-2c30f9b0affd" name="Changes" comment="A lot of weird stuff">
+    <list default="true" id="18af90a4-e6fe-412d-b2b2-2c30f9b0affd" name="Changes" comment="So yeah, I kind of made more thing scalable, now the text and everything depends on the resolution. Also splitted things and added regeneration of the board, IT WORKS.&#10;&#10;Oh, and yeah, added points, so we can truly be WINNERS.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnswerButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnswerButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DrawingFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DrawingFunction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PositionsOfShapes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PositionsOfShapes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +44,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\katri\IdeaProjects\IQTest" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
