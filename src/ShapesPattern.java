@@ -34,7 +34,7 @@ public class ShapesPattern extends JPanel {
 
         int objectCount = 0;
 
-        g.setColor(new Color(162,225,165));
+        g.setColor(PositionsOfShapes.color);
         g.fillRect(0,0, PositionsOfShapes.frameSizeX, PositionsOfShapes.frameSizeY);
 
 //drawing 8 shapes in matrix
@@ -42,7 +42,7 @@ public class ShapesPattern extends JPanel {
             for (int j = 0; j < 3; j++) {
                 Painting.grayRectangleY = 0.03 * PositionsOfShapes.frameSizeY + 0.25 * PositionsOfShapes.frameSizeY * i;
                 Painting.grayRectangleX = 0.075 * PositionsOfShapes.frameSizeX + 0.325 * PositionsOfShapes.frameSizeX * j;
-                g.setColor(Color.lightGray);
+                g.setColor(PositionsOfShapes.backgroundColor);
                 g.fillRect((int) Painting.grayRectangleX, (int) Painting.grayRectangleY, (int) (PositionsOfShapes.frameSizeX * 0.2), (int) (PositionsOfShapes.frameSizeY * 0.2));
 
                 if(j == 0) {
@@ -98,9 +98,9 @@ public class ShapesPattern extends JPanel {
                 }
 
                 if(RandomArray.ranArrMatrix[i][j][2] > 0.66){
-                    g.setColor(new Color(76, 243, 84));
+                    g.setColor(PositionsOfShapes.thirdColor);
                 } else if (RandomArray.ranArrMatrix[i][j][2] < 0.33){
-                    g.setColor(new Color(167, 99, 238));
+                    g.setColor(PositionsOfShapes.secondColor);
                 } else {
                     g.setColor(new Color(239, 83, 255, 255));
                 }
@@ -154,13 +154,13 @@ public class ShapesPattern extends JPanel {
 
             Painting.grayRectangleY = 0.77 * PositionsOfShapes.frameSizeY;
             Painting.grayRectangleX = 0.27 * PositionsOfShapes.frameSizeX + 0.165 * PositionsOfShapes.frameSizeX * PositionsOfButtons.answerPosition;
-            g.setColor(Color.lightGray);
+            g.setColor(PositionsOfShapes.backgroundColor);
             g.fillRect((int) Painting.grayRectangleX, (int) Painting.grayRectangleY, (int) (PositionsOfShapes.frameSizeX * 0.13), (int) (PositionsOfShapes.frameSizeY * 0.13));
 
             if(RandomArray.ranArrMatrix[3][0][4] > 0.66){
-                g.setColor(new Color(76, 243, 84));
+                g.setColor(PositionsOfShapes.thirdColor);
             } else if (RandomArray.ranArrMatrix[3][0][4] < 0.33){
-                g.setColor(new Color(167, 99, 238));
+                g.setColor(PositionsOfShapes.secondColor);
             } else {
                 g.setColor(new Color(239, 83, 255, 255));
             }
@@ -203,13 +203,13 @@ public class ShapesPattern extends JPanel {
 
             Painting.grayRectangleY = 0.77 * PositionsOfShapes.frameSizeY;
             Painting.grayRectangleX = 0.27 * PositionsOfShapes.frameSizeX + 0.165 * PositionsOfShapes.frameSizeX * PositionsOfButtons.wrongAnswerPosition1;
-            g.setColor(Color.lightGray);
+            g.setColor(PositionsOfShapes.backgroundColor);
             g.fillRect((int) Painting.grayRectangleX, (int) Painting.grayRectangleY, (int) (PositionsOfShapes.frameSizeX * 0.13), (int) (PositionsOfShapes.frameSizeY * 0.13));
 
             if(RandomArray.ranArrMatrix[3][0][5] > 0.66){
-                g.setColor(new Color(76, 243, 84));
+                g.setColor(PositionsOfShapes.thirdColor);
             } else if (RandomArray.ranArrMatrix[3][0][5] < 0.33){
-                g.setColor(new Color(167, 99, 238));
+                g.setColor(PositionsOfShapes.secondColor);
             } else {
                 g.setColor(new Color(239, 83, 255, 255));
             }
@@ -272,13 +272,13 @@ public class ShapesPattern extends JPanel {
 
             Painting.grayRectangleY = 0.77 * PositionsOfShapes.frameSizeY;
             Painting.grayRectangleX = 0.27 * PositionsOfShapes.frameSizeX + 0.165 * PositionsOfShapes.frameSizeX * PositionsOfButtons.wrongAnswerPosition2;
-            g.setColor(Color.lightGray);
+            g.setColor(PositionsOfShapes.backgroundColor);
             g.fillRect((int) Painting.grayRectangleX, (int) Painting.grayRectangleY, (int) (PositionsOfShapes.frameSizeX * 0.13), (int) (PositionsOfShapes.frameSizeY * 0.13));
 
             if(RandomArray.ranArrMatrix[3][0][6] > 0.66){
-                g.setColor(new Color(76, 243, 84));
+                g.setColor(PositionsOfShapes.thirdColor);
             } else if (RandomArray.ranArrMatrix[3][0][6] < 0.33){
-                g.setColor(new Color(167, 99, 238));
+                g.setColor(PositionsOfShapes.secondColor);
             } else {
                 g.setColor(new Color(239, 83, 255, 255));
             }

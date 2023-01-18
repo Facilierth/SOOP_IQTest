@@ -34,6 +34,11 @@ public class PositionsOfShapes {
     static double[][] fourObjectsY = {{0.03 * frameSizeY, 0.03 * frameSizeY, 0.12 * frameSizeY, 0.12 * frameSizeY},
             {0.03 * frameSizeY, 0.03 * frameSizeY, 0.08 * frameSizeY, 0.08 * frameSizeY }};
 
+    static Color color =  (new Color(192, 192, 192));
+
+    static Color secondColor = new Color(152, 55, 255);
+    static Color thirdColor = new Color(211, 24, 155);
+    static Color backgroundColor = new Color(211, 211, 211);
 
     public PositionsOfShapes() {
         Dimension size = Toolkit.getDefaultToolkit().getScreenSize();

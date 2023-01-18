@@ -16,7 +16,7 @@ public class IncreasingPattern extends JPanel {
     public void paint(Graphics g) {
         super.paint(g);
 
-        g.setColor(new Color(162,225,165));
+        g.setColor(PositionsOfShapes.color);
         g.fillRect(0,0, PositionsOfShapes.frameSizeX, PositionsOfShapes.frameSizeY);
 
         int objectCount = 0;
@@ -30,13 +30,13 @@ public class IncreasingPattern extends JPanel {
 
                     Painting.grayRectangleY = 0.03 * PositionsOfShapes.frameSizeY + 0.25 * PositionsOfShapes.frameSizeY * i;
                     Painting.grayRectangleX = 0.075 * PositionsOfShapes.frameSizeX + 0.325 * PositionsOfShapes.frameSizeX * j;
-                    g.setColor(Color.lightGray);
+                    g.setColor(PositionsOfShapes.backgroundColor);
                     g.fillRect((int) Painting.grayRectangleX, (int) Painting.grayRectangleY, (int) (PositionsOfShapes.frameSizeX * 0.2), (int) (PositionsOfShapes.frameSizeY * 0.2));
 
                     if(RandomArray.ranArrMatrix[i][j][1]>0.66){
-                        g.setColor(new Color(76, 243, 84));
+                        g.setColor(PositionsOfShapes.thirdColor);
                     } else if(RandomArray.ranArrMatrix[i][j][1]<0.33) {
-                        g.setColor(new Color(167, 99, 238));
+                        g.setColor(PositionsOfShapes.secondColor);
                     } else{
                         g.setColor(new Color(239, 83, 255, 255));
                     }
@@ -78,13 +78,13 @@ public class IncreasingPattern extends JPanel {
 
                     Painting.grayRectangleY = 0.03 * PositionsOfShapes.frameSizeY + 0.25 * PositionsOfShapes.frameSizeY * i;
                     Painting.grayRectangleX = 0.075 * PositionsOfShapes.frameSizeX + 0.325 * PositionsOfShapes.frameSizeX * j;
-                    g.setColor(Color.lightGray);
+                    g.setColor(PositionsOfShapes.backgroundColor);
                     g.fillRect((int) Painting.grayRectangleX, (int) Painting.grayRectangleY, (int) (PositionsOfShapes.frameSizeX * 0.2), (int) (PositionsOfShapes.frameSizeY * 0.2));
 
                     if(RandomArray.ranArrMatrix[i][j][5]>0.66){
-                        g.setColor(new Color(76, 243, 84));
+                        g.setColor(PositionsOfShapes.thirdColor);
                     } else if(RandomArray.ranArrMatrix[i][j][5]<0.33) {
-                        g.setColor(new Color(167, 99, 238));
+                        g.setColor(PositionsOfShapes.secondColor);
                     } else{
                         g.setColor(new Color(239, 83, 255, 255));
                     }
@@ -126,13 +126,13 @@ public class IncreasingPattern extends JPanel {
 
             Painting.grayRectangleY = 0.77 * PositionsOfShapes.frameSizeY;
             Painting.grayRectangleX = 0.27 * PositionsOfShapes.frameSizeX + 0.165 * PositionsOfShapes.frameSizeX * PositionsOfButtons.answerPosition;
-            g.setColor(Color.lightGray);
+            g.setColor(PositionsOfShapes.backgroundColor);
             g.fillRect((int) Painting.grayRectangleX, (int) Painting.grayRectangleY, (int) (PositionsOfShapes.frameSizeX * 0.13), (int) (PositionsOfShapes.frameSizeY * 0.13));
 
             if (RandomArray.ranArrAnswers[0][0] > 0.66) {
-                g.setColor(new Color(76, 243, 84));
+                g.setColor(PositionsOfShapes.thirdColor);
             } else if (RandomArray.ranArrAnswers[0][0] < 0.33) {
-                g.setColor(new Color(167, 99, 238));
+                g.setColor(PositionsOfShapes.secondColor);
             } else {
                 g.setColor(new Color(239, 83, 255, 255));
             }
@@ -157,13 +157,13 @@ public class IncreasingPattern extends JPanel {
 
             Painting.grayRectangleY = 0.77 * PositionsOfShapes.frameSizeY;
             Painting.grayRectangleX = 0.27 * PositionsOfShapes.frameSizeX + 0.165 * PositionsOfShapes.frameSizeX * PositionsOfButtons.wrongAnswerPosition1;
-            g.setColor(Color.lightGray);
+            g.setColor(PositionsOfShapes.backgroundColor);
             g.fillRect((int) Painting.grayRectangleX, (int) Painting.grayRectangleY, (int) (PositionsOfShapes.frameSizeX * 0.13), (int) (PositionsOfShapes.frameSizeY * 0.13));
 
             if (RandomArray.ranArrAnswers[1][0] > 0.66) {
-                g.setColor(new Color(76, 243, 84));
+                g.setColor(PositionsOfShapes.thirdColor);
             } else if (RandomArray.ranArrAnswers[1][0] < 0.33) {
-                g.setColor(new Color(167, 99, 238));
+                g.setColor(PositionsOfShapes.secondColor);
             } else {
                 g.setColor(new Color(239, 83, 255, 255));
             }
@@ -204,13 +204,13 @@ public class IncreasingPattern extends JPanel {
 
             Painting.grayRectangleY = 0.77 * PositionsOfShapes.frameSizeY;
             Painting.grayRectangleX = 0.27 * PositionsOfShapes.frameSizeX + 0.165 * PositionsOfShapes.frameSizeX * PositionsOfButtons.wrongAnswerPosition2;
-            g.setColor(Color.lightGray);
+            g.setColor(PositionsOfShapes.backgroundColor);
             g.fillRect((int) Painting.grayRectangleX, (int) Painting.grayRectangleY, (int) (PositionsOfShapes.frameSizeX * 0.13), (int) (PositionsOfShapes.frameSizeY * 0.13));
 
             if (RandomArray.ranArrAnswers[2][0] > 0.66) {
-                g.setColor(new Color(76, 243, 84));
+                g.setColor(PositionsOfShapes.thirdColor);
             } else if (RandomArray.ranArrAnswers[2][0] < 0.33) {
-                g.setColor(new Color(167, 99, 238));
+                g.setColor(PositionsOfShapes.secondColor);
             } else {
                 g.setColor(new Color(239, 83, 255, 255));
             }

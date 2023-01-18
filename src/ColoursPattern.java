@@ -19,7 +19,7 @@ public class ColoursPattern extends JPanel {
 
         public void paint(Graphics g) {
             super.paint(g);
-            g.setColor(new Color(162,225,165));
+            g.setColor(PositionsOfShapes.color);
             g.fillRect(0,0, PositionsOfShapes.frameSizeX, PositionsOfShapes.frameSizeY);
 
             int objectCount = 0;
@@ -30,15 +30,15 @@ public class ColoursPattern extends JPanel {
 
                         Painting.grayRectangleY = 0.03 * PositionsOfShapes.frameSizeY + 0.25 * PositionsOfShapes.frameSizeY * i;
                         Painting.grayRectangleX = 0.075 * PositionsOfShapes.frameSizeX + 0.325 * PositionsOfShapes.frameSizeX * j;
-                        g.setColor(Color.lightGray);
+                        g.setColor(PositionsOfShapes.backgroundColor);
                         g.fillRect((int) Painting.grayRectangleX, (int) Painting.grayRectangleY, (int) (PositionsOfShapes.frameSizeX * 0.2), (int) (PositionsOfShapes.frameSizeY * 0.2));
 
                     if(j == 0) {
                         if (RandomArray.ranArrMatrix[i][j][0] > 0.66) {
-                        g.setColor(new Color(76, 243, 84));
+                        g.setColor(PositionsOfShapes.thirdColor);
                         greenUsed = true;
                     } else if (RandomArray.ranArrMatrix[i][j][0] < 0.33) {
-                        g.setColor(new Color(167, 99, 238));
+                        g.setColor(PositionsOfShapes.secondColor);
                         purpleUsed = true;
                     } else {
                         g.setColor(new Color(239, 83, 255, 255));
@@ -46,10 +46,10 @@ public class ColoursPattern extends JPanel {
                     }
                     } else if(j == 1 && pinkUsed){
                         if (RandomArray.ranArrMatrix[i][j][4] > 0.5) {
-                            g.setColor(new Color(76, 243, 84));
+                            g.setColor(PositionsOfShapes.thirdColor);
                             greenUsed = true;
                         } else {
-                            g.setColor(new Color(167, 99, 238));
+                            g.setColor(PositionsOfShapes.secondColor);
                             purpleUsed = true;
                         }
                     } else if(j == 1 && greenUsed){
@@ -57,12 +57,12 @@ public class ColoursPattern extends JPanel {
                             g.setColor(new Color(239, 83, 255, 255));
                             pinkUsed = true;
                         } else {
-                            g.setColor(new Color(167, 99, 238));
+                            g.setColor(PositionsOfShapes.secondColor);
                             purpleUsed = true;
                         }
                     } else if(j == 1 && purpleUsed){
                         if (RandomArray.ranArrMatrix[i][j][4] > 0.5) {
-                            g.setColor(new Color(76, 243, 84));
+                            g.setColor(PositionsOfShapes.thirdColor);
                             greenUsed = true;
                         } else {
                             g.setColor(new Color(239, 83, 255, 255));
@@ -74,12 +74,12 @@ public class ColoursPattern extends JPanel {
                             pinkAnswer = true;
                         }
                     } else if(j == 2 && pinkUsed && purpleUsed){
-                        g.setColor(new Color(76, 243, 84));
+                        g.setColor(PositionsOfShapes.thirdColor);
                         if(i == 2){
                             greenAnswer = true;
                         }
                     } else if(j == 2 && greenUsed && pinkUsed){
-                        g.setColor(new Color(167, 99, 238));
+                        g.setColor(PositionsOfShapes.secondColor);
                         if(i == 2){
                             purpleAnswer = true;
                         }
@@ -133,13 +133,13 @@ public class ColoursPattern extends JPanel {
 
                 Painting.grayRectangleY = 0.77 * PositionsOfShapes.frameSizeY;
                 Painting.grayRectangleX = 0.27 * PositionsOfShapes.frameSizeX + 0.165 * PositionsOfShapes.frameSizeX * PositionsOfButtons.answerPosition;
-                g.setColor(Color.lightGray);
+                g.setColor(PositionsOfShapes.backgroundColor);
                 g.fillRect((int) Painting.grayRectangleX, (int) Painting.grayRectangleY, (int) (PositionsOfShapes.frameSizeX * 0.13), (int) (PositionsOfShapes.frameSizeY * 0.13));
 
                 if(purpleAnswer){
-                    g.setColor(new Color(167, 99, 238));
+                    g.setColor(PositionsOfShapes.secondColor);
                 }else if(greenAnswer){
-                    g.setColor(new Color(76, 243, 84));
+                    g.setColor(PositionsOfShapes.thirdColor);
                 }else{
                     g.setColor(new Color(239, 83, 255, 255));
                 }
@@ -184,24 +184,24 @@ public class ColoursPattern extends JPanel {
 
                     Painting.grayRectangleY = 0.77 * PositionsOfShapes.frameSizeY;
                     Painting.grayRectangleX = 0.27 * PositionsOfShapes.frameSizeX + 0.165 * PositionsOfShapes.frameSizeX * PositionsOfButtons.wrongAnswerPosition1;
-                    g.setColor(Color.lightGray);
+                    g.setColor(PositionsOfShapes.backgroundColor);
                     g.fillRect((int) Painting.grayRectangleX, (int) Painting.grayRectangleY, (int) (PositionsOfShapes.frameSizeX * 0.13), (int) (PositionsOfShapes.frameSizeY * 0.13));
 
                     if(pinkAnswer && RandomArray.ranArrMatrix[3][0][4]>0.5){
-                        g.setColor(new Color(167, 99, 238));
+                        g.setColor(PositionsOfShapes.secondColor);
                         purpleAnswer = true;
                     }else if(pinkAnswer){
-                        g.setColor(new Color(76, 243, 84));
+                        g.setColor(PositionsOfShapes.thirdColor);
                         greenAnswer = true;
                     }
                     else if(purpleAnswer && RandomArray.ranArrMatrix[3][0][4]>0.5){
                         g.setColor(new Color(239, 83, 255, 255));
                         pinkAnswer = true;
                     }else if(purpleAnswer){
-                        g.setColor(new Color(76, 243, 84));
+                        g.setColor(PositionsOfShapes.thirdColor);
                         greenAnswer = true;
                     } else if(greenAnswer && RandomArray.ranArrMatrix[3][0][4]>0.5){
-                        g.setColor(new Color(167, 99, 238));
+                        g.setColor(PositionsOfShapes.secondColor);
                         purpleAnswer = true;
                     }else if(greenAnswer){
                         g.setColor(new Color(239, 83, 255, 255));
@@ -247,13 +247,13 @@ public class ColoursPattern extends JPanel {
 
                     Painting.grayRectangleY = 0.77 * PositionsOfShapes.frameSizeY;
                     Painting.grayRectangleX = 0.27 * PositionsOfShapes.frameSizeX + 0.165 * PositionsOfShapes.frameSizeX * PositionsOfButtons.wrongAnswerPosition2;
-                    g.setColor(Color.lightGray);
+                    g.setColor(PositionsOfShapes.backgroundColor);
                     g.fillRect((int) Painting.grayRectangleX, (int) Painting.grayRectangleY, (int) (PositionsOfShapes.frameSizeX * 0.13), (int) (PositionsOfShapes.frameSizeY * 0.13));
 
                     if(pinkAnswer && greenAnswer){
-                        g.setColor(new Color(167, 99, 238));
+                        g.setColor(PositionsOfShapes.secondColor);
                     }else if(pinkAnswer && purpleAnswer){
-                        g.setColor(new Color(76, 243, 84));
+                        g.setColor(PositionsOfShapes.thirdColor);
                     }else if (purpleAnswer && greenAnswer){
                         g.setColor(new Color(239, 83, 255, 255));
                     }

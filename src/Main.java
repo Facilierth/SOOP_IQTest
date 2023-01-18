@@ -6,7 +6,7 @@ import javax.swing.*;
 
 public class Main extends JPanel {
 
-    static Color color =  (new Color(162, 225, 165));
+    static Color color =  (PositionsOfShapes.color);
     static AnswerButton[] buttons = new AnswerButton[3];
     static JTextArea textArea;
 
