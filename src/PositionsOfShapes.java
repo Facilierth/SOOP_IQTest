@@ -1,7 +1,9 @@
+import java.awt.*;
+
 public class PositionsOfShapes {
 //positions of shapes used in drawing
-    static int frameSizeX = 900;
-    static int frameSizeY = 900;
+    static int frameSizeX = 700;
+    static int frameSizeY = 700;
     static int frameCenterX = frameSizeX/2;
     static int frameCenterY = frameSizeY/2;
 
@@ -31,4 +33,11 @@ public class PositionsOfShapes {
 
     static double[][] fourObjectsY = {{0.03 * frameSizeY, 0.03 * frameSizeY, 0.12 * frameSizeY, 0.12 * frameSizeY},
             {0.03 * frameSizeY, 0.03 * frameSizeY, 0.08 * frameSizeY, 0.08 * frameSizeY }};
+
+
+    public PositionsOfShapes() {
+        Dimension size = Toolkit.getDefaultToolkit().getScreenSize();
+         frameSizeY = (int)size.getHeight();
+         frameSizeX = frameSizeY;
+    }
 }

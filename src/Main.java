@@ -8,8 +8,8 @@ public class Main extends JPanel {
 
     public static void main(String[] args) {
 
-//        DrawingFunction drawing = new DrawingFunction();
-//        drawing.creatingFrame();
+        // DrawingFunction drawing = new DrawingFunction();
+        // drawing.creatingFrame();
 
         PositionsOfButtons.settingButtonPosition();
         RandomArray.creatingRandomArrays();
@@ -39,19 +39,16 @@ public class Main extends JPanel {
             frame.add(shapes);
         }
 
-            JButton correctButton = new JButton();
-
-            correctButton.setBounds((int) PositionsOfShapes.buttonPositionX[PositionsOfButtons.answerPosition], (int) PositionsOfShapes.buttonPositionY[PositionsOfButtons.answerPosition], 117, 117);
-            correctButton.setOpaque(false);
-            correctButton.setContentAreaFilled(false);
-            correctButton.setBorderPainted(false);
-            correctButton.addActionListener(new ActionListener() {
+            AnswerButton correctButton = new AnswerButton(ButtonType.RIGHT);
+            correctButton.button.setBounds((int) PositionsOfShapes.buttonPositionX[PositionsOfButtons.answerPosition], (int) PositionsOfShapes.buttonPositionY[PositionsOfButtons.answerPosition], 117, 117);
+            correctButton.button.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
+
                     textArea.setText("correct!");
 
                 }
             });
-            frame.add(correctButton);
+
 
             JButton wrongButton1 = new JButton();
             wrongButton1.setBounds((int) PositionsOfShapes.buttonPositionX[PositionsOfButtons.wrongAnswerPosition1], (int) PositionsOfShapes.buttonPositionY[PositionsOfButtons.wrongAnswerPosition1], 117, 117);
@@ -62,6 +59,7 @@ public class Main extends JPanel {
                 public void actionPerformed(ActionEvent e) {
                     textArea.setText("wrong!");
                 }
+
             });
             frame.add(wrongButton1);
 
@@ -72,10 +70,12 @@ public class Main extends JPanel {
             wrongButton2.setBorderPainted(false);
             wrongButton2.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
+
                     textArea.setText("wrong!");
                 }
             });
             frame.add(wrongButton2);
+            frame.add(correctButton.button);
     }
 }
 
