@@ -10,8 +10,8 @@ public class DrawingFunction extends JFrame {
 
     public void creatingFrame (){
 
-        PositionsOfButtons.settingButtonPosition();
-        RandomArray.creatingRandomArrays();
+        //PositionsOfButtons.settingButtonPosition();
+       // RandomArray.creatingRandomArrays();
 
         System.out.println(PositionsOfButtons.answerPosition);
 

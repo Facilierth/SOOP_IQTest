@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 
 enum ButtonType{
     WRONG,
@@ -10,11 +11,13 @@ public class AnswerButton {
 
     ButtonType type = ButtonType.WRONG;
 
-    AnswerButton(ButtonType type){
-        this.type = type;
+    AnswerButton(){
         button = new JButton();
-        button.setOpaque(false);
+        //button.setOpaque(true);
         button.setContentAreaFilled(false);
+       // button.setBackground(Color.RED);
+        //button.setForeground(Color.RED);
+
         button.setBorderPainted(false);
     }
 }

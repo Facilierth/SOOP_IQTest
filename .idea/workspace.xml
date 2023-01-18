@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18af90a4-e6fe-412d-b2b2-2c30f9b0affd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AnswerButton.java" afterDir="false" />
+    <list default="true" id="18af90a4-e6fe-412d-b2b2-2c30f9b0affd" name="Changes" comment="A lot of weird stuff">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnswerButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnswerButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DrawingFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DrawingFunction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PositionsOfShapes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PositionsOfShapes.java" afterDir="false" />
     </list>
@@ -56,8 +57,16 @@
       <updated>1673277005827</updated>
       <workItem from="1673277006981" duration="1129000" />
       <workItem from="1673519200225" duration="2358000" />
-      <workItem from="1674030401336" duration="1389000" />
+      <workItem from="1674030401336" duration="8874000" />
     </task>
+    <task id="LOCAL-00001" summary="A lot of weird stuff">
+      <created>1674032083631</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674032083631</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -73,5 +82,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="A lot of weird stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="A lot of weird stuff" />
   </component>
 </project>
