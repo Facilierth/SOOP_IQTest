@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18af90a4-e6fe-412d-b2b2-2c30f9b0affd" name="Changes" comment="So yeah, I kind of made more thing scalable, now the text and everything depends on the resolution. Also splitted things and added regeneration of the board, IT WORKS.&#10;&#10;Oh, and yeah, added points, so we can truly be WINNERS.">
+    <list default="true" id="18af90a4-e6fe-412d-b2b2-2c30f9b0affd" name="Changes" comment="Updated title frame background color">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -68,7 +68,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674032083631</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added Title Frame">
+      <created>1674053293182</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674053293182</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updated title frame background color">
+      <created>1674053434720</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674053434720</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,6 +101,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="A lot of weird stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="A lot of weird stuff" />
+    <MESSAGE value="Added Title Frame" />
+    <MESSAGE value="Updated title frame background color" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated title frame background color" />
   </component>
 </project>

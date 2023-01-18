@@ -6,6 +6,7 @@ import javax.swing.*;
 
 public class Main extends JPanel {
 
+    static Color color =  (new Color(162, 225, 165));
     static AnswerButton[] buttons = new AnswerButton[3];
     static JTextArea textArea;
 
@@ -20,15 +21,13 @@ public class Main extends JPanel {
 
         // DrawingFunction drawing = new DrawingFunction();
         // drawing.creatingFrame();
+        frame= new JFrame("Raven Matrix");
 
-        JPanel panel = new JPanel();
-
-        JFrame titleFrame = new JFrame("Raven's matrices");
-        titleFrame.setResizable(false);
-        titleFrame.getContentPane().setBackground(new Color(162, 225, 165));
-        titleFrame.setSize(PositionsOfShapes.frameSizeX, PositionsOfShapes.frameSizeY);
-        titleFrame.setVisible(true);
-        titleFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.getContentPane().setBackground(color);
+        frame.setResizable(false);
+        frame.setSize(PositionsOfShapes.frameSizeX, PositionsOfShapes.frameSizeY);
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JLabel title = new JLabel("Raven's Matrices");
 
@@ -44,23 +43,22 @@ public class Main extends JPanel {
         subtext.setBounds(0, (int) (PositionsOfShapes.frameSizeY * 0.4),(int) (PositionsOfShapes.frameSizeX), (int) (PositionsOfShapes.frameSizeY*0.33));
         subtext.setHorizontalAlignment(SwingConstants.CENTER);
 
-
-
         JButton button = new JButton();
         button.setContentAreaFilled(false);
         button.setBorderPainted(false);
 
         button.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+                frame.getContentPane().removeAll();
+                frame.invalidate();
                 SetUp();
-                titleFrame.setVisible(false);
             }
 
         });
-        titleFrame.getContentPane().add(subtext);
-        titleFrame.getContentPane().add(title);
 
-        titleFrame.add(button);
+        frame.getContentPane().add(subtext);
+        frame.getContentPane().add(title);
+        frame.getContentPane().add(button);
 
     }
 
@@ -71,22 +69,14 @@ public class Main extends JPanel {
         textArea = new JTextArea();
         textArea.setBounds((int) (0.33 * PositionsOfShapes.frameSizeX), (int) (0.9 * PositionsOfShapes.frameSizeY), (int) (0.33 * PositionsOfShapes.frameSizeX), 34);
 
-        Color color =  (new Color(162, 225, 165));
-
-        textArea.setBackground(new Color(162, 225, 165));
-        textArea.setCaretColor(new Color(162, 225, 165));
+        textArea.setBackground(color);
+        textArea.setCaretColor(color);
         textArea.setFont(new Font("Comic Sans", Font.PLAIN, 25));
 
-        frame= new JFrame("Raven Matrix");
+        generatedPattern = new ShapesPattern();
 
-        generatedPattern = new ColoursPattern();
-        frame.getContentPane().add(generatedPattern);
-
-        frame.setResizable(false);
-        frame.setSize(PositionsOfShapes.frameSizeX, PositionsOfShapes.frameSizeY);
-        frame.setVisible(true);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().add(textArea);
+
 
         for(int i = 0; i < 3; i++) {
             buttons[i] = new AnswerButton();
@@ -129,13 +119,16 @@ public class Main extends JPanel {
         buttons[PositionsOfButtons.answerPosition].type = ButtonType.RIGHT;
         buttons[PositionsOfButtons.wrongAnswerPosition1].type = ButtonType.WRONG;
         buttons[PositionsOfButtons.wrongAnswerPosition2].type = ButtonType.WRONG;
+
+        frame.getContentPane().add(generatedPattern);
+
+        frame.revalidate();
     }
 
     private static void GenerateBoard() {
 
         PositionsOfButtons.settingButtonPosition();
         RandomArray.creatingRandomArrays();
-
 
         frame.remove(generatedPattern);
 
