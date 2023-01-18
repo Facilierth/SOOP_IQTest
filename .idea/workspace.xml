@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18af90a4-e6fe-412d-b2b2-2c30f9b0affd" name="Changes" comment="Updated title frame background color">
+    <list default="true" id="18af90a4-e6fe-412d-b2b2-2c30f9b0affd" name="Changes" comment="Now all happens in one frame">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -82,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674053434720</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Now all happens in one frame">
+      <created>1674055629417</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674055629417</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +110,7 @@
     <MESSAGE value="A lot of weird stuff" />
     <MESSAGE value="Added Title Frame" />
     <MESSAGE value="Updated title frame background color" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated title frame background color" />
+    <MESSAGE value="Now all happens in one frame" />
+    <option name="LAST_COMMIT_MESSAGE" value="Now all happens in one frame" />
   </component>
 </project>
