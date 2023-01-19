@@ -23,11 +23,27 @@ public class Main extends JPanel {
         // drawing.creatingFrame();
         frame= new JFrame("Raven Matrix");
 
-        frame.getContentPane().setBackground(color);
+        //frame.getContentPane().setBackground(color);
         frame.setResizable(false);
         frame.setSize(PositionsOfShapes.frameSizeX, PositionsOfShapes.frameSizeY);
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+       /* ImageIcon background = new ImageIcon(frame.getClass().getResource("windowsXP.jpg"));
+        Image img = background.getImage();
+        Image temp = img.getScaledInstance(PositionsOfShapes.frameSizeX,PositionsOfShapes.frameSizeY,Image.SCALE_SMOOTH);
+        background = new ImageIcon(temp);
+        JLabel back = new JLabel(background);
+        back.setLayout(null);
+        back.setBounds(0,0,PositionsOfShapes.frameSizeX,PositionsOfShapes.frameSizeY);
+
+
+        frame.getContentPane().add(back);
+
+        frame.getLayeredPane().setLayer(back, frame.getLayeredPane().lowestLayer());
+*/
+
+
 
         JLabel title = new JLabel("Raven's Matrices");
 
