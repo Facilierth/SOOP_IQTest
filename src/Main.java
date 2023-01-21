@@ -8,11 +8,14 @@ public class Main extends JPanel {
 
     static Color color =  (PositionsOfShapes.color);
     static AnswerButton[] buttons = new AnswerButton[3];
-    static JTextArea textArea;
+    static JTextField textFieldAnswer;
+    static JTextField textFieldPoints;
+
 
     static  JFrame frame;
 
-    static int points = 0;
+    static int playerPoints = 0;
+    static int totalPoints = 0;
 
     static JPanel generatedPattern;
     static long last = 0;
@@ -43,8 +46,6 @@ public class Main extends JPanel {
         frame.getLayeredPane().setLayer(back, frame.getLayeredPane().lowestLayer());
 */
 
-
-
         JLabel title = new JLabel("Raven's Matrices");
 
         JLabel subtext = new JLabel("Click anywhere to continue");
@@ -53,7 +54,7 @@ public class Main extends JPanel {
         title.setText("Raven's Matrices");
 
         title.setHorizontalAlignment(SwingConstants.CENTER);
-        title.setFont(new Font("Calibri", Font.BOLD, 80));
+        title.setFont(new Font("Calibre", Font.BOLD, 80));
 
         subtext.setFont(new Font("Calibre", Font.ITALIC, 15));
         subtext.setBounds(0, (int) (PositionsOfShapes.frameSizeY * 0.4),(int) (PositionsOfShapes.frameSizeX), (int) (PositionsOfShapes.frameSizeY*0.33));
@@ -81,17 +82,28 @@ public class Main extends JPanel {
     private static void SetUp(){
         PositionsOfButtons.settingButtonPosition();
         RandomArray.creatingRandomArrays();
+        textFieldPoints = new JTextField();
+        textFieldPoints.setBounds((int) (0.77 * PositionsOfShapes.frameSizeX), (int) (0.8 * PositionsOfShapes.frameSizeY), (int) (0.20 * PositionsOfShapes.frameSizeX), 70);
+        textFieldPoints.setBackground(color);
+        textFieldPoints.setCaretColor(color);
+        textFieldPoints.setEditable(false);
+        textFieldPoints.setBorder(javax.swing.BorderFactory.createEmptyBorder());
+        textFieldPoints.setFont(new Font("Comic Sans", Font.PLAIN, 70));
+        textFieldPoints.setText("0/0");
 
-        textArea = new JTextArea();
-        textArea.setBounds((int) (0.33 * PositionsOfShapes.frameSizeX), (int) (0.9 * PositionsOfShapes.frameSizeY), (int) (0.33 * PositionsOfShapes.frameSizeX), 34);
 
-        textArea.setBackground(color);
-        textArea.setCaretColor(color);
-        textArea.setFont(new Font("Comic Sans", Font.PLAIN, 25));
+        textFieldAnswer = new JTextField();
+        textFieldAnswer.setBounds((int) (0.455 * PositionsOfShapes.frameSizeX), (int) (0.9 * PositionsOfShapes.frameSizeY), (int) (0.33 * PositionsOfShapes.frameSizeX), 34);
+        textFieldAnswer.setBackground(color);
+        textFieldAnswer.setCaretColor(color);
+        textFieldAnswer.setEditable(false);
+        textFieldAnswer.setBorder(javax.swing.BorderFactory.createEmptyBorder());
+        textFieldAnswer.setFont(new Font("Comic Sans", Font.PLAIN, 25));
 
         generatedPattern = new ShapesPattern();
 
-        frame.getContentPane().add(textArea);
+        frame.getContentPane().add(textFieldAnswer);
+        frame.getContentPane().add(textFieldPoints);
 
 
         for(int i = 0; i < 3; i++) {
@@ -111,11 +123,17 @@ public class Main extends JPanel {
                     }
 
                     if(isRight) {
-                        points++;
-                        textArea.setText("right!");
+                        textFieldAnswer.setText("correct!");
+                        playerPoints++;
+                        totalPoints++;
+                        textFieldPoints.setText(String.valueOf(playerPoints + "/" + totalPoints));
                         GenerateBoard();
+
                     }else {
-                        textArea.setText("wrong!");
+                        textFieldAnswer.setText("wrong!");
+                        totalPoints++;
+                        textFieldPoints.setText(String.valueOf(playerPoints + "/" + totalPoints));
+                        GenerateBoard();
                     }
                 }
             });
@@ -169,8 +187,6 @@ public class Main extends JPanel {
         buttons[PositionsOfButtons.wrongAnswerPosition2].type = ButtonType.WRONG;
 
         frame.revalidate();
-        System.out.println(points);
-
     }
 }
 

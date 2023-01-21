@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18af90a4-e6fe-412d-b2b2-2c30f9b0affd" name="Changes" comment="Erased hard-coded colors, everything is now in PositionsOfShapes">
-      <change afterPath="$PROJECT_DIR$/windowsXP.jpg" afterDir="false" />
+    <list default="true" id="18af90a4-e6fe-412d-b2b2-2c30f9b0affd" name="Changes" comment="Now all happens in one frame">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnswerButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnswerButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DrawingFunction.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +49,6 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\katri\IdeaProjects\IQTest" />
-      <recent name="C:\Users\katri\IdeaProjects\IQTest\src" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -62,7 +62,6 @@
       <workItem from="1673277006981" duration="1129000" />
       <workItem from="1673519200225" duration="2358000" />
       <workItem from="1674030401336" duration="8874000" />
-      <workItem from="1674057348672" duration="4498000" />
     </task>
     <task id="LOCAL-00001" summary="A lot of weird stuff">
       <created>1674032083631</created>
@@ -92,21 +91,7 @@
       <option name="project" value="LOCAL" />
       <updated>1674055629417</updated>
     </task>
-    <task id="LOCAL-00005" summary="Workspace xml update">
-      <created>1674057394443</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1674057394443</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Erased hard-coded colors, everything is now in PositionsOfShapes">
-      <created>1674060113116</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1674060113116</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,8 +113,6 @@
     <MESSAGE value="Added Title Frame" />
     <MESSAGE value="Updated title frame background color" />
     <MESSAGE value="Now all happens in one frame" />
-    <MESSAGE value="Workspace xml update" />
-    <MESSAGE value="Erased hard-coded colors, everything is now in PositionsOfShapes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Erased hard-coded colors, everything is now in PositionsOfShapes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Now all happens in one frame" />
   </component>
 </project>
